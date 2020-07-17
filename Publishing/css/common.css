@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('../fontawesome/css/all.min.css');
+@font-face {
+	src:url('../font/NotoSansCJKkr-Regular.otf');
+	font-family: "noto";
+	font-weight: normal;
+}
+@font-face {
+	src:url('../font/NotoSansCJKkr-Medium.otf');
+	font-family: "noto";
+	font-weight: bold;
+}
+
+:root {
+	--main-color: #5685ff;
+	--sub-color : #87abff;
+	--text-color : #333333;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'noto';
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
