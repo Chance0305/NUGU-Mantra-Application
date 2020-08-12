@@ -41,6 +41,7 @@
                 <span>여성</span>
 
             </div>
+            
             <button type="button" id="register_submit">회원가입</button>
             <a href="/" class="login-redirect">이미 아이디가 있으신가요?</a>
         </form>
