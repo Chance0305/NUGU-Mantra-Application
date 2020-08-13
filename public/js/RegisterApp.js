@@ -112,6 +112,7 @@ class RegisterApp {
         });
     }
 
+
     error_text(str, dom) {
         document.querySelector(`.${dom}`).innerHTML = str;
     }

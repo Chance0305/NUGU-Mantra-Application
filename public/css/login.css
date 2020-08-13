@@ -115,6 +115,7 @@
 #login_submit {
     width: 70%;
     height: 60px;
+    outline: none;
     border:none;
     border-radius: 50px;
     font-size: 1.1em;
