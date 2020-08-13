@@ -10,21 +10,22 @@ use Gondr\App\Library;
 class UserController
 {
 
+    public function login_process()
+    {
+        $id = htmlentities($_POST['user_id']);
+        $password = htmlentities($_POST['user_password']);
+        $auto_login = $_POST['user_auto_login'];
 
+        $sql = "SELECT * FROM `mantra_users` WHERE `user_id` = ? AND `user_password` = PASSWORD(?)";
+        $user = DB::fetch($sql, [$id, $password]);
 
+        if ($user) {
+            $_SESSION['user'] = $user;
+            // 자동로그인 제외 구현
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
+        Library::sendJson(["result" => $user == true]);
+    }
 
     public function register_process()
     {

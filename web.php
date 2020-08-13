@@ -10,4 +10,5 @@ if (isset($_SESSION['user'])) {
 
 
     Route::post("/user/register", "UserController@register_process");
+    Route::post("/user/login","UserController@login_process");
 }
