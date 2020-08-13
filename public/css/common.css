@@ -34,6 +34,26 @@ li {
 	list-style: none;
 }
 
+.parent-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.flex-center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-coulmn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 /* Toast Start */
 #toast-list {
     position: fixed;
@@ -56,3 +76,30 @@ li {
     margin-top: -120px;
 }
 /* Toast End */
+
+/* splash start */
+
+#splash_screen {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#splash_logo {
+    width: 50%;
+    object-fit: cover;
+}
+
+.splash_text {
+    font-size: 1.7em;
+    font-weight: 900;
+    color: var(--sub-color);
+}
+.splash_text > span {
+    color: var(--main-color);
+}
+
+/* splash end */
