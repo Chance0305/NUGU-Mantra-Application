@@ -85,12 +85,13 @@ li {
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    /* display: none; */
 }
 
 #splash_logo {
     width: 50%;
     object-fit: cover;
+    transform: scale(1.0);
 }
 
 .splash_text {
