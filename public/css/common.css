@@ -91,7 +91,7 @@ li {
 #splash_logo {
     width: 50%;
     object-fit: cover;
-    transform: scale(1.0);
+    transform: scale(1.0) rotate(0deg);
 }
 
 .splash_text {

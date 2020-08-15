@@ -18,13 +18,11 @@ window.addEventListener("load",()=>{
         });
 
         this.$dom.find("img").css({
-            "transform":"scale(1.2)"
+            "transform":"scale(1.2) rotate(360deg)"
         });
-
-        
 
     }
 
-    spl.animateItmes(1500);
+    spl.hide();
 
 });
