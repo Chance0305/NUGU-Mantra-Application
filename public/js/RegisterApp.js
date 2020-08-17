@@ -60,11 +60,16 @@ class RegisterApp {
     }
 
     check_date = e => {
+        register_date.value = register_date.value.replace(/[^\d]/g,"");
         if (register_date.value == "") {
-            this.error_text("생년월일을 선택해주세요.", "date_err");
+            this.error_text("생년월일을 입력해주세요.", "date_err");
             register_date.style.border = "1px solid #fe8b74";
             this.date_check = false;
-        } else {
+        } else if(register_date.value.length !== 6){
+            this.error_text("생년월일은 6자리 숫자로 입력해주세요.", "date_err");
+            register_date.style.border = "1px solid #fe8b74";
+            this.date_check = false;
+        }else {
             this.error_text("", "date_err");
             register_date.style.border = "1px solid #5685ff";
             this.date_check = true;

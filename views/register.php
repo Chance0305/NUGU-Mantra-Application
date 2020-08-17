@@ -30,7 +30,7 @@
             <span class="register-error pass_err"></span>
             <input id="register_passwordc" type="password" placeholder="비밀번호 확인">
             <span class="register-error passc_err"></span>
-            <input id="register_date" type="date">
+            <input id="register_date" type="text" placeholder="생년월일 6자리" maxlength="6">
             <span class="register-error date_err"></span>
             <div class="register-gender">
                 <input type="radio" value="male" id="register_gender_m" class="register_gender_checkbox" name="register_gender">
@@ -49,6 +49,7 @@
             <a href="/" class="login-redirect">이미 아이디가 있으신가요?</a>
         </form>
     </div>
+    <div style="height: 300px;"></div>
 </body>
 
 </html>
