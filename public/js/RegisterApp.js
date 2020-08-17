@@ -1,6 +1,7 @@
 const log = console.log;
 const idPat = /^[a-z0-9]{4,15}$/;
-const passPat = /^.*(?=^.{6,20}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+//const passPat = /^.*(?=^.{6,20}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+const passPat = /^(?=.*[a-zA-Z])(?=.*[\d]).{8,20}$/;
 window.addEventListener("load", () => {
     let registerApp = new RegisterApp();
 });
@@ -27,7 +28,7 @@ class RegisterApp {
     }
     check_pass = e => {
         if (!passPat.test(register_password.value) || register_password.value == "") {
-            this.error_text("비밀번호는 특수문자를 포함하여 8자 이상 20자 이하로 구성 되어야 합니다.", "pass_err");
+            this.error_text("비밀번호는 영문자와 숫자를 조합한 8자 이상 20자 이하로 구성 되어야 합니다.", "pass_err");
             register_password.style.border = "1px solid #fe8b74";
             this.pass_check = false;
         } else {
