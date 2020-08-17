@@ -106,8 +106,10 @@ class RegisterApp {
                 this.error_text("중복되는 아이디 입니다. 다른 아이디를 사용해주세요", "id_err");
                 register_id.style.border = "1px solid #fe8b74";
                 return;
-            } else {
-                location.href = "/";
+            } else { // 회원가입 성공
+                modal.alert("성공적으로 회원가입 되었습니다.").then(bool => {
+                    location.href = "/";
+                });
             }
         });
     }
