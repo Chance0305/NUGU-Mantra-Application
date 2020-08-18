@@ -46,7 +46,7 @@
             </div>
             <span class="register-error gender_err" style="margin-top: 30px;"></span>
             <button type="button" id="register_submit">회원가입</button>
-            <a href="/" class="login-redirect">이미 아이디가 있으신가요?</a>
+            <a href="/login" class="login-redirect">이미 아이디가 있으신가요?</a>
         </form>
     </div>
     <div style="height: 300px;"></div>
