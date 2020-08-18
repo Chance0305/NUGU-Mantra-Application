@@ -26,8 +26,12 @@ class MainController extends MasterController
         $this->render("register");
     }
 
+    public function init()
+    {
+        $this->render("init");
+    }
+
     public function splash()
     {
-        
     }
 }
