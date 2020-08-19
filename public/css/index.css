@@ -1,6 +1,8 @@
-
-
 /* main section start */
+
+#main {
+    /* justify-content: space-between; */
+}
 
 .main_status {
     width: 100%;
@@ -55,7 +57,28 @@
     color: var(--main-color);
 }
 
+.main_guide_text {
+    position: relative;
+    width: 90%;
+    top: 60px;
+    margin: 0 auto;
+    text-align: center;
+    color: #a0a1a3;
+    font-size: 0.85em;
+}
 
+.main_start_btn {
+    position: absolute;
+    height: 3.5em;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 100px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    font-weight: bold;
+    bottom: 25px;
+}
 
 /* main section end */
 
