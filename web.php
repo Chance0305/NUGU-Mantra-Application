@@ -4,6 +4,8 @@ use Gondr\App\Route;
 
 if (isset($_SESSION['user'])) {
     Route::get("/", "MainController@index");
+
+    Route::get("/menu", "MainController@menu");
 } else {
     // Route::get("/", "MainController@login");
     Route::get("/", "MainController@init");
@@ -12,4 +14,6 @@ if (isset($_SESSION['user'])) {
 
     Route::post("/user/register", "UserController@register_process");
     Route::post("/user/login", "UserController@login_process");
+    
+
 }

@@ -34,4 +34,10 @@ class MainController extends MasterController
     public function splash()
     {
     }
+
+
+    public function menu()
+    {
+        $this->render("menu");
+    }
 }
