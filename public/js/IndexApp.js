@@ -1,3 +1,5 @@
+const user_score = 87;
+
 class IndexApp {
     constructor(){
 
@@ -40,7 +42,7 @@ class IndexApp {
         
         this.statusCtx.fillStyle = "#fff";
         this.statusCtx.beginPath();
-        this.statusCtx.arc(size/2 , size/2 , size/2 , -Math.PI/2 , -Math.PI/2 + (0.6) * (2*Math.PI) );
+        this.statusCtx.arc(size/2 , size/2 , size/2 , -Math.PI/2 , -Math.PI/2 + (user_score / 100) * (2*Math.PI) );
         this.statusCtx.fill();
         this.statusCtx.closePath();
 
@@ -51,11 +53,14 @@ class IndexApp {
         this.statusCtx.fill();
         this.statusCtx.restore();
 
-        this.statusCtx.font = "25px noto";
-        this.statusCtx.textAlign = 'center';
         this.statusCtx.textBaseline = 'middle';
-        this.statusCtx.fillText("정재성",size/2,size/2);
+        this.statusCtx.textAlign = 'center';
+
+        this.statusCtx.font = "20px noto";
+        this.statusCtx.fillText("정재성",size/2,size/2-35);
         
+        this.statusCtx.font = "bold 32px noto";
+        this.statusCtx.fillText(`${user_score.toFixed(2)}`,size/2,size/2);
     
     }
 }
