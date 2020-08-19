@@ -1,3 +1,4 @@
+const log = console.log;
 window.spl = new Object();
 window.modal = new Object();
 
