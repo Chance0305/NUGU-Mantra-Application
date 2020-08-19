@@ -2,35 +2,32 @@
 
 /* main section start */
 
-section#main {
-    background-color: #f7f7f7;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-section#main::-webkit-scrollbar {
-    display: none;
-}
-
 .main_status {
     width: 100%;
     position: relative;
-    background-color: var(--main-color);
+    background-image: linear-gradient(to bottom, var(--main-color) 50% , var(--sub-color));
     height: 55%;
+    max-height: 400px;
+    min-height: 350px;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main_status_top {
     position: relative;
     top: 1em;
     width: calc(100% - 2em);
-    margin: 0 auto;
     display: flex;
+    /* align-items: center; */
     justify-content: space-between;
+}
+
+.main_status_top > i {
+    color: #0005;
+    font-size: 28px;
 }
 
 .main_status_top > img {
@@ -38,7 +35,14 @@ section#main::-webkit-scrollbar {
     object-fit: cover;
 }
 
+.main_status_graph {
+    max-width: 200px;
+    width: 80%;
 
+    /* background-color: #fff; */
+    position: relative;
+    top: 2.5em;
+}
 
 /* main section end */
 

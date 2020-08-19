@@ -6,5 +6,11 @@
 <div class="main_status">
     <div class="main_status_top">
         <img src="imgs/user_icon.png" alt="user_img">
+        <i class="fas fa-question-circle"></i>
     </div>
+
+    <div class="main_status_graph">
+        <canvas id="main_status_canvas"></canvas>
+    </div>
+
 </div>
