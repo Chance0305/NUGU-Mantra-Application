@@ -1,4 +1,4 @@
-<!-- 여기는 alert php 부분 입니다. -->
+<!-- alert.php require start -->
 <div id="alert_screen_confirm" class="alert_screen">
     <div class="parent-wrapper flex-center-row">
         <div class="alert_container">
@@ -27,3 +27,5 @@
         </div>
     </div>
 </div>
+
+<!-- alert.php require end -->

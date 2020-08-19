@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/init.css">
-    <title>Document</title>
-</head>
 
-<body>
-    <div class="container">
-        <img src="imgs/logo_white.png" alt="" class="init_logo">
-        <div class="init_options">
-            <a href="/register">
-                <div class="register_option init_option flex-center-row">MANTRA에 가입</div>
-            </a>
-            <a href="/login">
-                <div class="login_option init_option flex-center-row">로그인</div>
-            </a>
+    <body>
+        <div class="container">
+            <div class="init_img_box">
+                <img src="imgs/symbol_white_logo.png" alt="" class="init_logo">
+                <img src="imgs/logo_white.png" alt="" class="init_logo">
+            </div>
+            <div class="init_options">
+                <a href="/register">
+                    <div class="register_option init_option flex-center-row">MANTRA에 가입</div>
+                </a>
+                <a href="/login">
+                    <div class="login_option init_option flex-center-row">로그인</div>
+                </a>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 
-</html>
+    </html>

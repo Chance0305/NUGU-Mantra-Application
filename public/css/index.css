@@ -1,0 +1,44 @@
+
+
+/* main section start */
+
+section#main {
+    background-color: #f7f7f7;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+section#main::-webkit-scrollbar {
+    display: none;
+}
+
+.main_status {
+    width: 100%;
+    position: relative;
+    background-color: var(--main-color);
+    height: 55%;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.main_status_top {
+    position: relative;
+    top: 1em;
+    width: calc(100% - 2em);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_status_top > img {
+    width: 3em;
+    object-fit: cover;
+}
+
+
+
+/* main section end */
+

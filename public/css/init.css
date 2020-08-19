@@ -15,8 +15,21 @@ body {
 }
 
 .init_logo {
-    width: 50%;
+    width: 20%;
 }
+
+.init_img_box > .init_logo:last-child {
+    width: 50%;
+    margin-top: 2em;
+}
+
+.init_img_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 .init_options {
     width: 100%;

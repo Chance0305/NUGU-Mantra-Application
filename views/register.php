@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/register.css">
-    <script src="js/Toast.js"></script>
-    <script src="js/RegisterApp.js"></script>
-    <meta charset="UTF-8">
-    <title>만트라</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-</head>
+<link rel="stylesheet" href="css/register.css">
+<script src="js/RegisterApp.js"></script>
 
 <body>
     <div class="container">

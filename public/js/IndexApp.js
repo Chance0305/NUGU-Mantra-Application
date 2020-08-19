@@ -5,7 +5,12 @@ class IndexApp {
 
     init(){
         this.addEvent();
-        spl.show();
+        this.loadSrc();
+    }
+
+    loadSrc(){
+        //spl.show();
+        //setTimeout(()=>{spl.fadeOut()},1000);
         
     }
 
