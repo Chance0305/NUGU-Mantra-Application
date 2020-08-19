@@ -13,4 +13,8 @@
         <canvas id="main_status_canvas"></canvas>
     </div>
 
+    <div class="main_status_text flex-center-row">
+        명상이 필요해 보여요!!
+    </div>
+
 </div>

@@ -1,4 +1,4 @@
-const user_score = 87;
+const user_score = 32;
 
 class IndexApp {
     constructor(){

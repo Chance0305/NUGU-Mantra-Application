@@ -38,10 +38,24 @@
 
 .main_status_graph {
     max-width: 270px;
-    width: 65%;
+    width: 60%;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
+
+.main_status_text {
+    position: absolute; 
+    width: 80%;
+    height: 90px;
+    border-radius: 50px;
+    box-shadow: 1px 2px 3px 2px #0001;
+    bottom: -35px;
+    background-color: #fff;
+    font-size: 1.1em;
+    color: var(--main-color);
+}
+
+
 
 /* main section end */
 
