@@ -61,6 +61,8 @@ class IndexApp {
         
         this.statusCtx.font = "bold 32px noto";
         this.statusCtx.fillText(`${user_score.toFixed(2)}`,size/2,size/2);
+
+        
     
     }
 }

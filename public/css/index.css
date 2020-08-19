@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .main_status_top {
@@ -36,12 +37,10 @@
 }
 
 .main_status_graph {
-    max-width: 200px;
-    width: 80%;
-
-    /* background-color: #fff; */
+    max-width: 270px;
+    width: 65%;
     position: relative;
-    top: 2.5em;
+    margin-bottom: 50px;
 }
 
 /* main section end */
