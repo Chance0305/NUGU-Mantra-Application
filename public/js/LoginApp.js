@@ -44,7 +44,7 @@ class LoginApp {
 				login_empty_error.style.display = "block";
 			} else { // 로그인 성공
 				modal.alert("성공적으로 로그인 되었습니다.").then(bool => {
-					location.reload();
+					location.href = '/';
 				});
 
 			}
