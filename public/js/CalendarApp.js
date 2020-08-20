@@ -6,6 +6,7 @@ class CalendarApp {
 
     init(){
         this.addEvent();
+        document.querySelectorAll("#bottom > .bottom_icon")[1].classList.add("bottom_active");
     }
 
     addEvent(){
