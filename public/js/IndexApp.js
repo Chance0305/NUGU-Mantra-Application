@@ -1,5 +1,4 @@
 const user_score = 32;
-
 class IndexApp {
     constructor(){
 
@@ -18,7 +17,7 @@ class IndexApp {
     loadSrc(){
         //spl.show();
         //setTimeout(()=>{spl.fadeOut()},1000);
-        
+        document.querySelectorAll("#bottom > .bottom_icon")[0].classList.add("bottom_active");
     }
 
     addEvent(){

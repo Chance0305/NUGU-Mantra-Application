@@ -16,6 +16,7 @@ class Menu {
         this.slide_container = document.querySelector(".slide_container");
         this.slideStart();
         this.addEvent();
+        document.querySelectorAll("#bottom > .bottom_icon")[0].classList.add("bottom_active");
     }
 
 
