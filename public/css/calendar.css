@@ -120,8 +120,11 @@
     background-color: var(--main-color);
     border-radius: 100px;
     color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
     height: 60px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .day_info_box {

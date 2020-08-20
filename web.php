@@ -16,6 +16,7 @@ if (isset($_SESSION['user'])) {
     Route::get("/", "MainController@init");
     Route::get("/login", "MainController@login");
     Route::get("/register", "MainController@register");
+    Route::get("/evaluate","MainController@evaluate");
 
     Route::post("/user/register", "UserController@register_process");
     Route::post("/user/login", "UserController@login_process");
