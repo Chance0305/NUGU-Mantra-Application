@@ -22,68 +22,23 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="calendar_active">
-                        <span>1</span>
-                    </td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+               
             </tbody>
         </table>
         
     </div>
     
     <div id="day_info">
+        <div class="day_info_top">
+            <canvas width="100" height="100" id="date_canvas"></canvas>
+            <div class="day_info_box">
+                <p class="day_info_today"></p>
+                <div class="day_info_text"></div>
+            </div>
+        </div>
 
+        <div class="day_info_btn">
+            월간 통계 보러 가기
+        </div>
     </div>
 </div>
