@@ -105,7 +105,6 @@ class CalendarApp {
             preObj.domActiveAction();
         }
 
-
         clickObj.active = true;
         clickObj.domActiveAction();
     }
