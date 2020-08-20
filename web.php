@@ -8,6 +8,9 @@ if (isset($_SESSION['user'])) {
     Route::get("/menu", "MainController@menu");
     Route::get("/calendar","MainController@calendar");
     Route::get("/my", "MainController@my");
+
+
+    Route::get("/meditation", "MainController@meditation");
 } else {
     // Route::get("/", "MainController@login");
     Route::get("/", "MainController@init");

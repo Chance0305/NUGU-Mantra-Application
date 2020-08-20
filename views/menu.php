@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="css/menu.css">
 <script src="js/MenuApp.js"></script>
-
+<a href="/" class="back_btn  flex-center-row"><i class="fas fa-chevron-left"></i></a>
 <div class="container ">
     <div class="menu_slide">
         <div class="slide_container">
-            <a href="">
+            <a href="/meditation">
                 <div class="slide_item">
                     <i class="fas fa-heart"></i>
                     <span>몸과 마음을 힐링하고<br> 싶을 땐</span>
@@ -30,7 +30,7 @@
             </a>
         </div>
     </div>
-    <a href="">
+    <a href="/meditation">
         <div class="menu_btn">
             <div class="menu_text_box">
                 <span>힐링이 필요할 때</span>
