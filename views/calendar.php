@@ -4,21 +4,21 @@
     <div id="calendar">
 
         <div class="calendar_top">
-            <i class="fa fa-chevron-left"></i>
+            <i class="fa fa-chevron-left" data-num="-1"></i>
             <span id="calendar_year_month"></span>
-            <i class="fa fa-chevron-right"></i>
+            <i class="fa fa-chevron-right" data-num="1"></i>
         </div>
 
         <table class="calendar_table">
             <thead>
                 <tr>
+                    <th>SUN</th>
                     <th>MON</th>
                     <th>TUE</th>
                     <th>WED</th>
                     <th>THE</th>
                     <th>FRI</th>
                     <th>SAT</th>
-                    <th>SUN</th>
                 </tr>
             </thead>
             <tbody>
