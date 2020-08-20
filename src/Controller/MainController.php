@@ -50,4 +50,9 @@ class MainController extends MasterController
     {
         $this->render("meditation");
     }
+
+    public function white_noise()
+    {
+        $this->render("white_noise");
+    }
 }

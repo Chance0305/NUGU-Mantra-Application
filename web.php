@@ -11,6 +11,7 @@ if (isset($_SESSION['user'])) {
 
 
     Route::get("/meditation", "MainController@meditation");
+    Route::get("/white_noise" , "MainController@white_noise");
 } else {
     // Route::get("/", "MainController@login");
     Route::get("/", "MainController@init");
