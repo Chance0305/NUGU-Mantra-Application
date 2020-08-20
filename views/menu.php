@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/menu.css">
 <script src="js/MenuApp.js"></script>
-
+<a href="/" class="back_btn  flex-center-row"><i class="fas fa-chevron-left"></i></a>
 <div class="container ">
     <div class="menu_slide">
         <div class="slide_container">

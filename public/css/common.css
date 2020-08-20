@@ -257,3 +257,18 @@ section#main::-webkit-scrollbar {
 
 
 /* layout top, bottom end */
+
+/* back button start */
+
+.back_btn {
+    position: fixed;
+    color: #fffb;
+    width: 30px;
+    height: 30px;
+    background-color: #0005;
+    border-radius: 30px;
+    left: 10px;
+    bottom: 13%;
+}
+
+/* back button end */
