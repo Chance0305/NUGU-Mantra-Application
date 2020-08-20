@@ -1,4 +1,3 @@
-const log = console.log;
 const idPat = /^[a-z0-9]{4,15}$/;
 //const passPat = /^.*(?=^.{6,20}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
 const passPat = /^(?=.*[a-zA-Z])(?=.*[\d]).{8,20}$/;
