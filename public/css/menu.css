@@ -45,10 +45,10 @@
 .slide_item > span {
     color: var(--text-color);
     font-size: 1.8em;
-    font-weight: 600;
 }
 
 .slide_item > p {
+    font-weight: 600;
     color: var(--main-color);
     font-size: 1.8em;
     margin-bottom: 0.8em;
