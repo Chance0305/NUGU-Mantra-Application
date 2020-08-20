@@ -68,12 +68,10 @@ window.addEventListener("load", () => {
         this.$ok_dom.fadeOut();
     }
 
-
-
-
-
     // modal API end
 
+
+    
 
 });
 

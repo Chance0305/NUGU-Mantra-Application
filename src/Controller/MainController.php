@@ -31,8 +31,9 @@ class MainController extends MasterController
         $this->render("init");
     }
 
-    public function splash()
+    public function calendar()
     {
+        $this->render("calendar");
     }
 
 
