@@ -23,6 +23,25 @@
     </div>
 
     <div class="meditation_sub_section">
-        
+        <div>
+            <span>주요기능</span>
+            <p><span>ㆍ</span> 음성으로 명상지도</p>
+            <p><span>ㆍ</span> 사용자의 기분에 따른 음악추천</p>
+        </div>
+        <div>
+            <span>설명</span>
+            <p>만트라의 기능중 하나인 '명상지도' 를 통하여 지친 몸과 마음을 달래보세요</p>
+            <p> - 음성을 통한 명상지도</p>
+            <p> - 사용자게에 음악추천</p>
+        </div>
+        <div>
+            <span>이용 가능 디바이스</span>
+            <p>스피커(NUGU candle)</p>
+        </div>
+        <div>
+            <span>문의</span>
+            <p>양영디지털고등학교 2학년1반 안진우</p>
+            <p>wjdrms735@naver.com</p>
+        </div>
     </div>
 </div>
