@@ -23,6 +23,6 @@
     잠들기 약 30분전, 제일 잔잔할때가 가장 이상적입니다.
 </div>
 
-<div class="main_start_btn flex-center-row">
-    만트라 서비스 시작하기
-</div>
+    <a href="/menu" class="main_start_btn flex-center-row">
+        만트라 서비스 시작하기
+    </a>

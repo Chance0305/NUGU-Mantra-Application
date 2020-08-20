@@ -1,4 +1,3 @@
-const log = console.log;
 
 window.addEventListener("load", () => {
     let menu = new Menu();
