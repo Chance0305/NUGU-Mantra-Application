@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.meditation_main_section {
+    position: relative;
+    width: 100%;
+    height: 35%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.meditation_main_section span {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.meditation_main_section p {
+    font-size: 0.9em;
+    opacity: 0.6;
+}
+
+.meditation_main_section i {
+    color: var(--main-color);
+    font-size: 3em;
+}
+
+.example_box {
+    width: 100%;
+    height: 30%;
+    margin-top: 40px;
+}
+
+.example_box>.example_main_text {
+    color: #aaa;
+    font-weight: bold;
+}
+
+.example_box>.example_main_text>i {
+    font-size: 1.5em;
+    margin-right: 7px;
+}
+
+.example_box > .exampl_sub_text {
+    margin: 10px 0;
+    font-size: 1em;
+    opacity: 1;
+}
+
+.example_box > .exampl_sub_text > span {
+    font-size: 0.7em;
+    opacity: 0.4;
+}
+
+.meditation_sub_section {
+    margin-top: 20px;
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+}
