@@ -88,6 +88,10 @@ class CalendarApp {
             trtd.appendChild(tr);
         }
 
+        if(this.dateArr.find(x=>{return x.active}) === undefined){
+            let first = this.dateArr.find(x=> x.date != null);
+            this.changeActive(first.date);
+        }
         $(".calendar_table").append(trtd);
 
     }
@@ -101,7 +105,7 @@ class CalendarApp {
             preObj.domActiveAction();
         }
 
-        
+
         clickObj.active = true;
         clickObj.domActiveAction();
     }

@@ -41,4 +41,9 @@ class MainController extends MasterController
     {
         $this->render("menu");
     }
+
+    public function my()
+    {
+        $this->render("my");
+    }
 }

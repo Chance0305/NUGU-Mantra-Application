@@ -1,4 +1,3 @@
-const log = console.log;
 
 class LoginApp {
 	constructor() {
