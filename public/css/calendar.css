@@ -85,7 +85,10 @@
 }
 
 .calendar_table > tbody > tr > td > span {
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 /* calendar css end */

@@ -5,7 +5,7 @@
 
         <div class="calendar_top">
             <i class="fa fa-chevron-left"></i>
-            <span id="calendar_year_month">2020년 8월</span>
+            <span id="calendar_year_month"></span>
             <i class="fa fa-chevron-right"></i>
         </div>
 
@@ -24,7 +24,7 @@
             <tbody>
                 <tr>
                     <td class="calendar_active">
-                        <span class="abs-center">1</span>
+                        <span>1</span>
                     </td>
                     <td>2</td>
                     <td>3</td>
