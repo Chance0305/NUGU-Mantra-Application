@@ -39,7 +39,7 @@
             <i class="fas fa-heart"></i>
         </div>
     </a>
-    <a href="">
+    <a href="/white_noise">
         <div class="menu_btn">
             <div class="menu_text_box">
                 <span>집중이 잘 안 돼</span>
