@@ -7,6 +7,6 @@
             <span>정재성</span>
             <p>더 많은 정보 보기 <i class="fas fa-chevron-right"></i></p>
         </div>
-        <img src="imgs/user_icon.png" alt="">
+        <img src="imgs/user_icon.png" alt="" >
     </div>
 </div>

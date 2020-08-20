@@ -45,4 +45,8 @@ class MainController extends MasterController
     {
         $this->render("my");
     }
+    public function meditation()
+    {
+        $this->render("meditation");
+    }
 }

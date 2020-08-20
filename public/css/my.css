@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-.my_main_section{
+.my_main_section {
     width: 100%;
     height: 33%;
     background-color: #fff;
@@ -15,7 +15,7 @@
 
 .my_main_section span {
     color: var(--text-color);
-    font-size : 1.8em;
+    font-size: 1.8em;
     font-weight: bold;
 }
 
@@ -28,4 +28,4 @@
 .my_main_section img {
     width: 100px;
     height: 100px;
-}
+}  
