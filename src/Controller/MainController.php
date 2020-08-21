@@ -46,11 +46,17 @@ class MainController extends MasterController
     {
         $this->render("my");
     }
+    
     public function meditation()
     {
         $this->render("meditation");
     }
 
+    public function evaluate()
+    {
+        $this->render("evaluate");
+    }
+    
     public function white_noise()
     {
         $this->render("white_noise");
