@@ -77,7 +77,9 @@ window.addEventListener("load", () => {
 
     // modal API end
 
-
+    $(".height_same_width").each((idx,x)=>{
+        $(x).css({height:`${$(x).width()}px`});
+    });
     
 
 });
