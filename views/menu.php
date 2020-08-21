@@ -57,7 +57,7 @@
             <i class="fas fa-bed"></i>
         </div>
     </a>
-    <a href="">
+    <a href="/evaluate">
         <div class="menu_btn">
             <div class="menu_text_box">
                 <span>기능을 평가해주세요!</span>

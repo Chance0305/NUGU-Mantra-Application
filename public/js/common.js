@@ -45,21 +45,28 @@ window.addEventListener("load", () => {
         this.$confirm_dom.find('.alert_text').html(text.toXSSFilteredText());
         this.$confirm_dom.fadeIn();
         return new Promise((res, rej) => {
+
             document.querySelector('.alert_ok').addEventListener("click", (e) => {
                 res(true);
+                this.$confirm_dom.fadeOut();
             });
+
             document.querySelector(".alert_refuse").addEventListener("click" , (e)=>{
-                res(false);
+                res(true);
+                this.$confirm_dom.fadeOut();
             });
+
         });
     }
 
-    modal.alert = function (text) {
+    modal.alert = function (text, btnText=null) {
         this.$ok_dom.find('.alert_text').html(text.toXSSFilteredText());
+        document.querySelector('.alert_ok_only').innerHTML = btnText != null ? btnText : "확인";
         this.$ok_dom.fadeIn();
         return new Promise((res, rej) => {
             document.querySelector('.alert_ok_only').addEventListener("click", (e) => {
                 res(true);
+                this.$ok_dom.fadeOut();
             });
         });
     }
