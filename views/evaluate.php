@@ -29,8 +29,9 @@
                     <div class="evaluate_part_show flex-center-row">50</div>
                 </div>
                 <input type="range" id="score_range" value="50" min="0" max="100">
+                <textarea id="evaluate_textarea" placeholder="오늘의 한줄평을 적어주세요!"></textarea>
             </div>
-
+            <div class="evaluate_part evaluate_btn flex-center-row">작성 완료</div>
         </div>
     </div>
 </div>
