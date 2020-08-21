@@ -12,7 +12,7 @@
                     <div class="slide_more_btn flex-center-row">더 보기</div>
                 </div>
             </a>
-            <a href="">
+            <a href="/white_noise">
                 <div class="slide_item">
                     <i class="fas fa-book-open"></i>
                     <span>시험공부 집중이<br> 안 될땐</span>
@@ -20,7 +20,7 @@
                     <div class="slide_more_btn flex-center-row">더 보기</div>
                 </div>
             </a>
-            <a href="">
+            <a href="/sleep">
                 <div class="slide_item">
                     <i class="fas fa-bed"></i>
                     <span>불면증이 있거나<br>자주 뒤척일 때</span>
@@ -39,7 +39,7 @@
             <i class="fas fa-heart"></i>
         </div>
     </a>
-    <a href="">
+    <a href="/white_noise">
         <div class="menu_btn">
             <div class="menu_text_box">
                 <span>집중이 잘 안 돼</span>
@@ -48,7 +48,7 @@
             <i class="fas fa-book-open"></i>
         </div>
     </a>
-    <a href="">
+    <a href="/sleep">
         <div class="menu_btn">
             <div class="menu_text_box">
                 <span>숙면을 위해서</span>

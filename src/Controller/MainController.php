@@ -56,4 +56,14 @@ class MainController extends MasterController
     {
         $this->render("evaluate");
     }
+    
+    public function white_noise()
+    {
+        $this->render("white_noise");
+    }
+
+    public function sleep()
+    {
+        $this->render("sleep");
+    }
 }
