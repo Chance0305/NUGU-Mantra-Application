@@ -25,7 +25,7 @@ class EvaluateApp {
 
         let txt = `오늘하루를 평가해 점수를 매기고, 한줄평을 작성하는 곳 입니다.`;
         let btnText = "알겠어요!";
-        // modal.alert(txt,btnText);
+        modal.alert(txt,btnText);
 
         let today = new Date();
         let str = `${today.getFullYear()}년 ${today.getMonth()+1}월 ${today.getDate()}일`;
