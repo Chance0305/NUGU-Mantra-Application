@@ -11,7 +11,7 @@
     </a>
     <a class="bottom_icon" href="#">
         <i class="far fa-user"></i>
-        <span>나</span>
+        <span>프로필</span>
     </a>
 </section>
 </div>
