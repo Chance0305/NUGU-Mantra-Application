@@ -6,11 +6,11 @@ class MyApp {
 
     init(){
         this.addEvent();
-        this.screenRender();
+        this.render();
     }
 
-    screenRender(){
-        
+    render(){
+        document.querySelectorAll("#bottom > .bottom_icon")[2].classList.add("bottom_active");
     }
 
     addEvent(){
