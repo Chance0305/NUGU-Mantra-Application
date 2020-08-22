@@ -11,7 +11,7 @@
     </div>
 
     <div class="profile_bottom">
-
+        
     </div>
 
 </div>

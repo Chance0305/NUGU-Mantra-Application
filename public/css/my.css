@@ -23,9 +23,8 @@
     width: 40%;
     background-color: #ddd;
     position: absolute;
-    bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
     border-radius: 100%;
-    position: relative;
 }
