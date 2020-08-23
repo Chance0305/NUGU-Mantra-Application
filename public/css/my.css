@@ -18,6 +18,12 @@
     top: 20px;
     left: 20px;
 }
+.profile_circle_container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .profile_circle {
     width: 45%;
@@ -55,8 +61,32 @@
     border-radius: 100%;
 }
 
-.profile_edit_btn > i {
-    margin-bottom: 30px;
-    margin-left: 4px;
+.profile_edit_btn > .parent-wrapper > i {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: #676767;
 }
+
+
+.profile_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.profile_name {
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.profile_id {
+    font-size: 1.1em;
+    color: #bababa;
+}
+
