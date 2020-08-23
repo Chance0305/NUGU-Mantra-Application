@@ -80,6 +80,12 @@ window.addEventListener("load", () => {
     $(".height_same_width").each((idx,x)=>{
         $(x).css({height:`${$(x).width()}px`});
     });
+
+    window.addEventListener("resize",(e)=>{
+        $(".height_same_width").each((idx,x)=>{
+            $(x).css({height:`${$(x).width()}px`});
+        }); 
+    });
     
 
 });

@@ -6,12 +6,17 @@
     <div class="profile_top">
         <div class="profile_title">PROFILE</div>
         <div class="profile_circle height_same_width">
-            
+            <div class="parent-wrapper flex-center-row">
+                <img src="imgs/dummy4.png" alt="profile_img">
+                <div class="profile_edit_btn flex-center-row">
+                    <i class="far fa-edit"></i>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="profile_bottom">
-        
+
     </div>
 
 </div>
