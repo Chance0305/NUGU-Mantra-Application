@@ -9,7 +9,7 @@
         <i class="far fa-calendar"></i>
         <span>기록</span>
     </a>
-    <a class="bottom_icon" href="#">
+    <a class="bottom_icon" href="/my">
         <i class="far fa-user"></i>
         <span>프로필</span>
     </a>

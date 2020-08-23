@@ -251,6 +251,7 @@ li {
 section#main {
     background-color: #f7f7f7;
     overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -40,4 +40,10 @@ class UserController
         $result = DB::execute($sql, [$id, $name, $pass, $date, $gender]);
         Library::sendJson(["register" => $result]);
     }
+
+    public function logout()
+    {
+        unset($_SESSION['user']);
+        Library::moveLink("/");
+    }
 }

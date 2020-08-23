@@ -52,7 +52,7 @@ window.addEventListener("load", () => {
             });
 
             document.querySelector(".alert_refuse").addEventListener("click" , (e)=>{
-                res(true);
+                res(false);
                 this.$confirm_dom.fadeOut();
             });
 
@@ -77,7 +77,15 @@ window.addEventListener("load", () => {
 
     // modal API end
 
+    $(".height_same_width").each((idx,x)=>{
+        $(x).css({height:`${$(x).width()}px`});
+    });
 
+    window.addEventListener("resize",(e)=>{
+        $(".height_same_width").each((idx,x)=>{
+            $(x).css({height:`${$(x).width()}px`});
+        }); 
+    });
     
 
 });

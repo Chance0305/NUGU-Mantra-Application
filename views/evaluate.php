@@ -1,10 +1,11 @@
+<?php use Gondr\App\Library; ?>
 <script src="js/EvaluateApp.js"></script>
 <link rel="stylesheet" href="css/evaluate.css">
 
 <div class="evaluate_container">
     <div class="evaluate_top">
         <div class="evaluate_top_icons">
-            <i class="fas fa-chevron-left"></i>
+            <a href="/menu"><i class="fas fa-chevron-left"></i></a>
             <span></span>
             <i class="far fa-question-circle"></i>
         </div>
@@ -14,7 +15,9 @@
             <img src="imgs/user_icon.png" alt="user_img" id="evaluate_user_img">
 
             <div class="evaluate_user_part evaluate_part">
-                <div class="evaluate_user_name">정재성</div>
+                <div class="evaluate_user_name">
+                <?= htmlentities(Library::getUser()->user_name) ?>
+                </div>
                 <p class="evaluate_user_type">명상 초보자</p>
             </div>
 
