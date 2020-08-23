@@ -29,14 +29,15 @@ class UserController
 
     public function register_process()
     {
+        $name = htmlentities($_POST['name']);
         $id = htmlentities($_POST['id']);
         $pass = htmlentities($_POST['pass']);
         $date = $_POST['date'];
         $gender = $_POST['gender'];
 
-        $sql = "INSERT INTO `mantra_users`(`user_idx`, `user_id`, `user_password`, `user_birthday`, `user_gender`)
-         VALUES (null , ? , PASSWORD(?) , ? , ?)";
-        $result = DB::execute($sql, [$id, $pass, $date, $gender]);
+        $sql = "INSERT INTO `mantra_users`(`user_idx`, `user_id`, `user_name` ,`user_password`, `user_birthday`, `user_gender`)
+         VALUES (null , ? , ? , PASSWORD(?) , ? , ?)";
+        $result = DB::execute($sql, [$id, $name, $pass, $date, $gender]);
         Library::sendJson(["register" => $result]);
     }
 }

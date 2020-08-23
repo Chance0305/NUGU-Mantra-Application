@@ -14,6 +14,8 @@
         <form action="" id="register-form">
             <h1>회원가입</h1>
             <div class="register-line"></div>
+            <input id="register_name" type="text" placeholder="이름">
+            <span class="register-error name_err"></span>
             <input id="register_id" type="text" placeholder="아이디">
             <span class="register-error id_err"></span>
             <input id="register_password" type="password" placeholder="비밀번호">
