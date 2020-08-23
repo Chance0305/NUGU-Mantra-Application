@@ -25,8 +25,9 @@
     font-size: 1em;
 }
 
-.evaluate_top_icons > i {
+.evaluate_top_icons > a {
     font-size: 1.2em;
+    color: #fff;
 }
 
 .evaluate_top_icons > i:last-child {

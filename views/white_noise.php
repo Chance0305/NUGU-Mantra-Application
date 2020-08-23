@@ -45,3 +45,8 @@
         </div>
     </div>
 </div>
+<script>
+    window.addEventListener('load',()=>{
+        document.querySelectorAll("#bottom > .bottom_icon")[0].classList.add("bottom_active");
+    });
+</script>

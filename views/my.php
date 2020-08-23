@@ -22,7 +22,9 @@
                         <span class="profile_name">
                             <?= htmlentities(Library::getUser()->user_name) ?>
                         </span>
-                        <span class="profile_id">ajwwlswotjd</span>
+                        <span class="profile_id">
+                        <?= htmlentities(Library::getUser()->user_id) ?>
+                        </span>
                     </div>
                 </div>
 

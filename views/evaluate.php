@@ -4,7 +4,7 @@
 <div class="evaluate_container">
     <div class="evaluate_top">
         <div class="evaluate_top_icons">
-            <i class="fas fa-chevron-left"></i>
+            <a href="/menu"><i class="fas fa-chevron-left"></i></a>
             <span></span>
             <i class="far fa-question-circle"></i>
         </div>
