@@ -52,7 +52,7 @@ window.addEventListener("load", () => {
             });
 
             document.querySelector(".alert_refuse").addEventListener("click" , (e)=>{
-                res(true);
+                res(false);
                 this.$confirm_dom.fadeOut();
             });
 

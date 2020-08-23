@@ -34,7 +34,7 @@
     </div>
 
     <div class="profile_bottom">
-        
+        <div class="profile_bottom_btn flex-center-row">로그아웃</div>
     </div>
 
 </div>

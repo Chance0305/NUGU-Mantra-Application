@@ -14,4 +14,11 @@ class Library
     {
         return __SIGN ? $_SESSION['user'] : null;
     }
+
+    public static function moveLink($link)
+    {
+        echo "<script>";
+        echo "location.href = '$link';";
+        echo "</script>";
+    }
 }

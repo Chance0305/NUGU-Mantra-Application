@@ -90,3 +90,20 @@
     color: #bababa;
 }
 
+.profile_bottom {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.profile_bottom_btn {
+    height: 3.5em;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 100px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
