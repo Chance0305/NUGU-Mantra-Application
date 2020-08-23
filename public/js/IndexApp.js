@@ -56,15 +56,14 @@ class IndexApp {
         this.statusCtx.textAlign = 'center';
 
         this.statusCtx.font = "20px noto";
-        this.statusCtx.fillText("정재성",size/2,size/2-35);
+        this.statusCtx.fillText(window.user_name,size/2,size/2-35);
         
         this.statusCtx.font = "bold 32px noto";
         this.statusCtx.fillText(`${user_score.toFixed(2)}`,size/2,size/2);
-
-        
     
     }
 }
+
 
 window.addEventListener("load",()=>{
     let indexApp = new IndexApp();
