@@ -1,6 +1,7 @@
 const idPat = /^[a-z0-9]{4,15}$/;
 //const passPat = /^.*(?=^.{6,20}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
 const passPat = /^(?=.*[a-zA-Z])(?=.*[\d]).{8,20}$/;
+const namePat = /^[가-힣]{2,5}$/;
 window.addEventListener("load", () => {
     let registerApp = new RegisterApp();
 });
@@ -10,6 +11,7 @@ class RegisterApp {
         this.init();
     }
     init() {
+        this.name_check = true;
         this.id_check = true;
         this.pass_check = true;
         this.passc_check = true;
@@ -19,12 +21,26 @@ class RegisterApp {
     }
 
     addEvent() {
+        register_name.addEventListener("input", this.check_name);
         register_id.addEventListener("input", this.check_id);
         register_password.addEventListener("input", this.check_pass);
         register_passwordc.addEventListener("input", this.check_pass);
         register_date.addEventListener("input", this.check_date);
         register_submit.addEventListener("click", this.register_process);
     }
+
+    check_name = e => {
+        if (!namePat.test(register_name.value) || register_name.value == "") {
+            this.error_text("이름은 한글로 2자 이상 5자 이하로 구성 되어야 합니다.", "name_err");
+            register_name.style.border = "1px solid #fe8b74";
+            this.name_check = false;
+        } else {
+            this.error_text("", "name_err");
+            register_name.style.border = "1px solid #5685ff";
+            this.name_check = true;
+        }
+    }
+
     check_pass = e => {
         if (!passPat.test(register_password.value) || register_password.value == "") {
             this.error_text("비밀번호는 영문자와 숫자를 조합한 8자 이상 20자 이하로 구성 되어야 합니다.", "pass_err");
@@ -59,16 +75,16 @@ class RegisterApp {
     }
 
     check_date = e => {
-        register_date.value = register_date.value.replace(/[^\d]/g,"");
+        register_date.value = register_date.value.replace(/[^\d]/g, "");
         if (register_date.value == "") {
             this.error_text("생년월일을 입력해주세요.", "date_err");
             register_date.style.border = "1px solid #fe8b74";
             this.date_check = false;
-        } else if(register_date.value.length !== 6){
+        } else if (register_date.value.length !== 6) {
             this.error_text("생년월일은 6자리 숫자로 입력해주세요.", "date_err");
             register_date.style.border = "1px solid #fe8b74";
             this.date_check = false;
-        }else {
+        } else {
             this.error_text("", "date_err");
             register_date.style.border = "1px solid #5685ff";
             this.date_check = true;
@@ -86,6 +102,7 @@ class RegisterApp {
     }
 
     register_process = e => {
+        const name = register_name.value.trim();
         const id = register_id.value.trim();
         const pass = register_password.value.trim();
         const date = register_date.value;
@@ -94,10 +111,12 @@ class RegisterApp {
         this.check_pass();
         this.check_date();
         this.check_gender();
-        if (!this.id_check || !this.pass_check || !this.passc_check || !this.date_check || !this.gender_check) {
+        this.check_name();
+        if (!this.id_check || !this.pass_check || !this.passc_check || !this.date_check || !this.gender_check || !this.name_check) {
             return;
         }
         let formData = new FormData();
+        formData.append("name", name);
         formData.append("id", id);
         formData.append("pass", pass);
         formData.append("date", date)
