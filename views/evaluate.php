@@ -1,4 +1,7 @@
 <?php use Gondr\App\Library; ?>
+<script>
+    window.evaluate_exist = <?= $exist ?>;
+</script>
 <script src="js/EvaluateApp.js"></script>
 <link rel="stylesheet" href="css/evaluate.css">
 
