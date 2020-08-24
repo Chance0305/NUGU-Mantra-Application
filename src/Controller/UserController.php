@@ -34,7 +34,7 @@ class UserController
         $pass = htmlentities($_POST['pass']);
         $date = $_POST['date'];
         $gender = $_POST['gender'];
-        $default_img_path = 'imgs/user_icon.png';
+        $default_img_path = 'imgs/user_icon.png'; # default img path
 
         $sql = "INSERT INTO `mantra_users`(`user_idx`, `user_id`, `user_name` ,`user_password`, `user_birthday`, `user_gender` , `user_img`)
          VALUES (null , ? , ? , PASSWORD(?) , ? , ? , ?)";
