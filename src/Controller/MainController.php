@@ -9,10 +9,11 @@ class MainController extends MasterController
     public function index()
     {
         $idx = $_SESSION['user']->user_idx;
-        $sql = "SELECT * FROM mantra_record WHERE user_idx = ?";
+        $sql = "SELECT * FROM mantra_record WHERE user_idx = ? order by record_idx desc";
+        $result = DB::fetch($sql, [$idx]);
+        if (!$result) $result = null;
 
-
-        $this->render("main");
+        $this->render("main", ["result" => $result]);
     }
 
     public function error()
