@@ -1,0 +1,147 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.register-logo {
+    position: relative;
+    top: 50px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.register-title {
+    color: var(--sub-color);
+    position: relative;
+    top: 60px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.register-title > span {
+    color: var(--main-color);   
+}
+
+.register-sub {
+    position: relative;
+    top: 60px;
+    font-size: 0.9em;
+    color: #a9a9a9;
+}
+
+#register-form {
+    width: 100%;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form > h1 {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.register-line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #333030;
+}
+
+#register-form > input {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    height: 40px;
+    background-color: #f9fafc;
+    outline: none;
+    border:1px solid #dfdfdf;
+    padding: 0 10px;
+}
+
+#register-form > input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.register-error {
+    font-size: 0.8em;
+    color: #fe8b74;
+    position: relative;
+    left: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+.register-gender {
+    position: relative;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#register_gender_label_w {
+    margin-left: 5px;
+}
+
+.register-gender > span {
+    margin-left: 5px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.register_gender_checkbox {
+    display: none;
+}
+
+.register-gender > label {
+    text-align: center;
+    font-size: 0.7em;
+    padding: 1px 2px;
+    color: #fff;
+    background-color: #fff;
+    border:1px solid #999;
+    box-sizing: content-box;
+}
+
+.register-gender > label > i {
+    margin-left: 2px;
+}
+
+#register_gender_m:checked ~ #register_gender_label_m {
+    background-color: var(--main-color);
+}
+
+#register_gender_w:checked ~ #register_gender_label_w {
+    background-color: var(--main-color);
+}
+
+#register_submit {
+    width: 70%;
+    height: 60px;
+    border:none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+
+.login-redirect {
+    text-align: center;
+    font-size: 0.9em;
+    position: relative;
+    top: 80px;
+    text-decoration: underline;
+    color: #54586e;
+    font-weight: bold;
+}
