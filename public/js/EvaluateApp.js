@@ -33,7 +33,12 @@ class EvaluateApp {
                 formData.append("comment",comment);
                 formData.append("score",score);
                 let xhr = new XMLHttpRequest();
-                xhr.open("POST",)
+                xhr.open("POST","/record/insert");
+                xhr.addEventListener("load",(e)=>{
+                    let json = xhr.responseText;
+                    log(json);
+                });
+                xhr.send(formData);
                 
             }
         });

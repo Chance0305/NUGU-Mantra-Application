@@ -18,4 +18,13 @@ class RecordController
         $result = DB::fetch($sql, [$idx, $date]);
         Library::sendJson($result);
     }
+
+    public function insertRecord()
+    {
+        var_dump($_POST);
+        $comment = $_POST['comment'];
+        $score = $_POST['score'];
+
+        $sql = "";
+    }
 }
