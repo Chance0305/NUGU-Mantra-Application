@@ -121,3 +121,7 @@ String.prototype.toXSSFilteredText = function () {
         //     console.log(err);
         // })
 
+
+Date.prototype.toDBString = function(){
+    return `${this.getFullYear()}-${this.getMonth()+1}-${this.getDate()}`;
+}
