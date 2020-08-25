@@ -10,7 +10,12 @@ class MainController extends MasterController
 {
     public function index()
     {
-        $this->render("main");
+        $idx = $_SESSION['user']->user_idx;
+        $sql = "SELECT * FROM mantra_record WHERE user_idx = ? order by record_idx desc";
+        $result = DB::fetch($sql, [$idx]);
+        if (!$result) $result = null;
+
+        $this->render("main", ["result" => $result]);
     }
 
     public function error()
@@ -38,7 +43,6 @@ class MainController extends MasterController
         $this->render("calendar");
     }
 
-
     public function menu()
     {
         $this->render("menu");
@@ -48,7 +52,7 @@ class MainController extends MasterController
     {
         $this->render("my");
     }
-    
+
     public function meditation()
     {
         $this->render("meditation");
@@ -64,7 +68,7 @@ class MainController extends MasterController
 
         $this->render("evaluate",["exist"=>$exist]);
     }
-    
+
     public function white_noise()
     {
         $this->render("white_noise");
