@@ -12,12 +12,39 @@ class EvaluateApp {
 
     addEvent(){
         this.score_input.addEventListener("input", this.scoreRangeInputHandler);
+        document.querySelector('.evaluate_btn').addEventListener("click", this.evaluateBtnClickHandler);
+    }
+
+    evaluateBtnClickHandler = e=> {
+        
+        let score = this.score_input.value;
+        let comment = document.querySelector("#evaluate_textarea").value.trim().toXSSFilteredText();
+
+        if(comment == ""){
+            let txt = "오늘의 한줄평을 작성해주세요!";
+            modal.alert(txt);
+            return;
+        }
+        
+        modal.confirm("작성을 완료하시겠습니까?").then((e)=>{
+            if(e){
+
+                let formData = new FormData();
+                formData.append("comment",comment);
+                formData.append("score",score);
+                let xhr = new XMLHttpRequest();
+                xhr.open("POST",)
+                
+            }
+        });
+        
     }
 
     scoreRangeInputHandler = e => {
         let value = e.currentTarget.value;
         document.querySelector(".evaluate_part_show").innerHTML = value;
         document.querySelector(".evaluate_part_show").style.left = `calc(${value}% - 25px)`;
+
     }
 
     render(){

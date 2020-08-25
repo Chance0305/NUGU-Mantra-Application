@@ -15,13 +15,13 @@
     </div>
     <div class="evaluate_bottom">
         <div class="evaluate_fix">
-            <img src="imgs/user_icon.png" alt="user_img" id="evaluate_user_img">
+            <img src="<?= __USER_IMG ?>" alt="user_img" id="evaluate_user_img">
 
             <div class="evaluate_user_part evaluate_part">
                 <div class="evaluate_user_name">
                 <?= htmlentities(Library::getUser()->user_name) ?>
                 </div>
-                <p class="evaluate_user_type">명상 초보자</p>
+                <p class="evaluate_user_type"><?= Library::getUserType(); ?></p>
             </div>
 
             <div class="evaluate_text_part evaluate_part">
