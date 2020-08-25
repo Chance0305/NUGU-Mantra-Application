@@ -8,13 +8,15 @@ if (isset($_SESSION['user'])) {
     Route::get("/menu", "MainController@menu");
     Route::get("/calendar", "MainController@calendar");
     Route::get("/my", "MainController@my");
-    Route::get("/evaluate","MainController@evaluate");
+    Route::get("/evaluate", "MainController@evaluate");
 
 
     Route::get("/meditation", "MainController@meditation");
     Route::get("/white_noise", "MainController@white_noise");
     Route::get("/sleep", "MainController@sleep");
-    Route::get("/logout","UserController@logout");
+    Route::get("/logout", "UserController@logout");
+
+    Route::post("/request-record", "RecordController@getRecord");
 } else {
     // Route::get("/", "MainController@login");
     Route::get("/", "MainController@init");
