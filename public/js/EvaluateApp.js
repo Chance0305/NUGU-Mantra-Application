@@ -35,7 +35,11 @@ class EvaluateApp {
                 let xhr = new XMLHttpRequest();
                 xhr.open("POST","/record/insert");
                 xhr.addEventListener("load",(e)=>{
-                    spl.fadeIn();
+
+                    modal.alert("기록 작성이 완료되었습니다.","보러 가기").then(e=>{
+                        location.href = "/calendar";
+                    });
+
                 });
                 xhr.send(formData);
                 
