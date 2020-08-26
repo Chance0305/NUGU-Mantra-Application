@@ -18,4 +18,18 @@ class RecordController
         $result = DB::fetch($sql, [$idx, $date]);
         Library::sendJson($result);
     }
+
+    public function insertRecord()
+    {
+        
+        $comment = $_POST['comment'];
+        $score = $_POST['score'];
+        $user_idx = Library::getUser()->user_idx;
+        $date = date('yy-n-d');
+
+        $sql = "INSERT INTO `mantra_record`(`record_idx`, `user_idx`, `date`, `score`, `comment`) VALUES (null,?,?,?,?)";
+        $datas = [$user_idx,$date,$score,$comment];
+        $result = DB::execute($sql,$datas);
+        Library::sendJson($result);
+    }
 }

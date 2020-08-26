@@ -3,6 +3,8 @@
 namespace Gondr\Controller;
 
 use Gondr\App\DB;
+use Gondr\App\Library;
+use Gondr\App\View;
 
 class MainController extends MasterController
 {
@@ -58,7 +60,14 @@ class MainController extends MasterController
 
     public function evaluate()
     {
-        $this->render("evaluate");
+
+        $sql = "SELECT * FROM `mantra_record` WHERE `user_idx` = ? AND `date` = ?";
+        $user_idx = Library::getUser()->user_idx;
+        $date_str = date('yy-n-d');
+        $exist = DB::fetch($sql,[$user_idx,$date_str]);
+        $exist = $exist ? 1 : 0;
+
+        $this->render("evaluate",["exist"=>$exist]);
     }
 
     public function white_noise()

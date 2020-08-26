@@ -17,6 +17,7 @@ if (isset($_SESSION['user'])) {
     Route::get("/logout", "UserController@logout");
 
     Route::post("/request-record", "RecordController@getRecord");
+    Route::post("/record/insert", "RecordController@insertRecord");
 } else {
     // Route::get("/", "MainController@login");
     Route::get("/", "MainController@init");
