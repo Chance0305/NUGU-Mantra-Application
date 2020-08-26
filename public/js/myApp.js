@@ -15,6 +15,30 @@ class MyApp {
 
     addEvent(){
         document.querySelector(".profile_bottom_btn").addEventListener("click", this.logoutBtnClickEventHandler);
+        document.querySelector(".profile_edit_btn").addEventListener('click', this.profileEditBtnClickEventHandler);
+    }
+
+    profileEditBtnClickEventHandler = e=> {
+
+        let input = document.createElement("input");
+        input.setAttribute("type","file");
+        input.setAttribute("accept","image/*");
+        input.addEventListener("input",(e)=>{
+            let file = e.currentTarget.files[0];
+            let acceptExt = ["jpg","jpeg","png","gif"];
+            let ext = file.type.split("/")[1];
+            if(acceptExt.includes(ext) && file.size <= 5000000){
+
+                log("asdf");
+                
+            } else {
+                modal.alert(`5MB 이하의 이미지 ( ${acceptExt.join(' , ')} ) 파일만 업로드 가능합니다.`);
+                return;
+            }
+            input.remove();
+        });
+        input.click();
+
     }
 
     logoutBtnClickEventHandler = e => {
