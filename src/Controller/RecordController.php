@@ -21,10 +21,15 @@ class RecordController
 
     public function insertRecord()
     {
-        var_dump($_POST);
+        
         $comment = $_POST['comment'];
         $score = $_POST['score'];
+        $user_idx = Library::getUser()->user_idx;
+        $date = date('yy-n-d');
 
-        $sql = "";
+        $sql = "INSERT INTO `mantra_record`(`record_idx`, `user_idx`, `date`, `score`, `comment`) VALUES (null,?,?,?,?)";
+        $datas = [$user_idx,$date,$score,$comment];
+        $result = DB::execute($sql,$datas);
+        Library::sendJson($result);
     }
 }
