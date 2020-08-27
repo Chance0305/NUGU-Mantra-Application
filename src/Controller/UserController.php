@@ -47,4 +47,19 @@ class UserController
         unset($_SESSION['user']);
         Library::moveLink("/");
     }
+
+    public function profile_update()
+    {
+        $file = $_FILES['file'];
+        $ext = $_POST['ext'];
+        $user_idx = Library::getUser()->user_idx;
+        $file_name = "user_profile_img" . $user_idx . "." .$ext;
+        $file_path = './user_profile_imgs/' . $file_name;
+        move_uploaded_file($file['tmp_name'], $file_path);
+        $sql = "UPDATE `mantra_users` SET `user_img`= ? WHERE `user_idx` = ?";
+        $result = DB::execute($sql,[$file_path,$user_idx]);
+        $_SESSION['user']->user_img = $file_path;
+        Library::sendJson(["result"=>$result]);
+
+    }
 }
