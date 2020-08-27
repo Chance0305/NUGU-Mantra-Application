@@ -47,12 +47,14 @@ class IndexApp {
 
         this.statusCtx.fillStyle = "#fff3";
         this.statusCtx.beginPath();
+        this.statusCtx.moveTo(size / 2, size / 2);
         this.statusCtx.arc(size / 2, size / 2, size / 2, -Math.PI / 2, 3 / 2 * Math.PI);
         this.statusCtx.fill();
         this.statusCtx.closePath();
 
         this.statusCtx.fillStyle = "#fff";
         this.statusCtx.beginPath();
+        this.statusCtx.moveTo(size / 2, size / 2);
         this.statusCtx.arc(size / 2, size / 2, size / 2, -Math.PI / 2, -Math.PI / 2 + (user_score / 100) * (2 * Math.PI));
         this.statusCtx.fill();
         this.statusCtx.closePath();
@@ -60,6 +62,7 @@ class IndexApp {
         this.statusCtx.save();
         this.statusCtx.globalCompositeOperation = 'destination-out';
         this.statusCtx.beginPath();
+        this.statusCtx.moveTo(size / 2, size / 2);
         this.statusCtx.arc(size / 2, size / 2, size / 2 - 2, 0, 2 * Math.PI, false);
         this.statusCtx.fill();
         this.statusCtx.restore();

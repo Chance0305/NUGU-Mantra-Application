@@ -1,3 +1,7 @@
+<?php
+
+use Gondr\App\Library;
+?>
 <script>const user_score = <?= $result->score ?>;</script>
 
 <link rel="stylesheet" href="css/index.css">
@@ -7,7 +11,7 @@
 
 <div class="main_status">
     <div class="main_status_top">
-        <img src="imgs/user_icon.png" alt="user_img">
+        <img src="<?= Library::getUser()->user_img ?>" alt="user_img">
         <i class="fas fa-question-circle"></i>
     </div>
 
