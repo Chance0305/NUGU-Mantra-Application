@@ -47,4 +47,16 @@ class UserController
         unset($_SESSION['user']);
         Library::moveLink("/");
     }
+
+    public function profile_update()
+    {
+        $file = $_FILES['file'];
+        $ext = $_POST['ext'];
+        $user_idx = Library::getUser()->user_idx;
+        $file_name = "user_profile_img" . $user_idx . "." .$ext;
+        
+        
+        
+        
+    }
 }

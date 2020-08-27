@@ -29,12 +29,17 @@ class MyApp {
             let ext = file.type.split("/")[1];
             if(acceptExt.includes(ext) && file.size <= 5000000){
 
+                let formData = new FormData();
+                formData.append("file",file);
+                formData.append("ext",ext);
+
                 let xhr = new XMLHttpRequest();
-                xhr.open("POST","");
+                xhr.open("POST","/user/profile/update");
                 xhr.addEventListener("load",(e)=>{
-                    log(e);
+                    let json = xhr.responseText;
+                    log(json);
                 });
-                xhr.send();
+                xhr.send(formData);
                 
             } else {
                 modal.alert(`5MB 이하의 이미지 ( ${acceptExt.join(' , ')} ) 파일만 업로드 가능합니다.`);
