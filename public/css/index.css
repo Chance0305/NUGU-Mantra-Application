@@ -34,7 +34,9 @@
 }
 
 .main_status_top > img {
-    width: 3em;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 100%;
     object-fit: cover;
 }
 
