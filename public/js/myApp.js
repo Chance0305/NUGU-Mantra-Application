@@ -36,8 +36,10 @@ class MyApp {
                 let xhr = new XMLHttpRequest();
                 xhr.open("POST","/user/profile/update");
                 xhr.addEventListener("load",(e)=>{
-                    let json = xhr.responseText;
-                    log(json);
+                    let txt = "프로필 변경이 완료되었습니다.";
+                    modal.alert(txt).then((e)=>{
+                        location.href = '/my';
+                    });
                 });
                 xhr.send(formData);
                 

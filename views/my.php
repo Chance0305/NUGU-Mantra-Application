@@ -11,7 +11,7 @@
 
                 <div class="profile_circle height_same_width">
                     <div class="parent-wrapper flex-center-row">
-                        <img src="imgs/dummy4.png" alt="profile_img">
+                        <img src="<?= Library::getUser()->user_img ?>" alt="profile_img">
                         <div class="profile_edit_btn">
                             <div class="parent-wrapper">
                                 <i class="far fa-edit"></i>
