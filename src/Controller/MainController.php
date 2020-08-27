@@ -79,4 +79,9 @@ class MainController extends MasterController
     {
         $this->render("sleep");
     }
+
+    public function statistics()
+    {
+        
+    }
 }

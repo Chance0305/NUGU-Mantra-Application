@@ -15,6 +15,7 @@ if (isset($_SESSION['user'])) {
     Route::get("/white_noise", "MainController@white_noise");
     Route::get("/sleep", "MainController@sleep");
     Route::get("/logout", "UserController@logout");
+    Route::get("/statistics","MainController@statistics");
     Route::post("/user/profile/update","UserController@profile_update");
 
     Route::post("/request-record", "RecordController@getRecord");
