@@ -140,18 +140,21 @@ class CalendarApp {
 
         this.ctx.fillStyle = "#dfdfdf"; // 제일 기본적으로 그려주는 회색 원
         this.ctx.beginPath();
+        this.ctx.moveTo(width/2,height/2);
         this.ctx.arc(width / 2, height / 2, 35, -Math.PI / 2, 3 / 2 * Math.PI);
         this.ctx.fill();
         this.ctx.closePath();
 
         this.ctx.fillStyle = "#5685ff";
         this.ctx.beginPath();
+        this.ctx.moveTo(width/2,height/2);
         this.ctx.arc(width / 2, height / 2, 35, -Math.PI / 2, -Math.PI / 2 + (user_score / 100) * (2 * Math.PI));
         this.ctx.fill();
         this.ctx.closePath();
 
         this.ctx.fillStyle = "#fff"; // 다 그리고 나서 안에 하얀색 채워주기
         this.ctx.beginPath();
+        this.ctx.moveTo(width/2,height/2);
         this.ctx.arc(width / 2, height / 2, 30, -Math.PI / 2, 3 / 2 * Math.PI);
         this.ctx.fill();
         this.ctx.closePath();
