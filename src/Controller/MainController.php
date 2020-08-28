@@ -11,9 +11,9 @@ class MainController extends MasterController
     public function index()
     {
         $idx = $_SESSION['user']->user_idx;
-        $sql = "SELECT * FROM mantra_record WHERE user_idx = ? order by record_idx desc";
+        $sql = "SELECT score FROM mantra_record WHERE user_idx = ? order by record_idx desc";
         $result = DB::fetch($sql, [$idx]);
-        if (!$result) $result = null;
+        if (!$result) $result = (object) ["score" => "0"];
 
         $this->render("main", ["result" => $result]);
     }
@@ -64,10 +64,10 @@ class MainController extends MasterController
         $sql = "SELECT * FROM `mantra_record` WHERE `user_idx` = ? AND `date` = ?";
         $user_idx = Library::getUser()->user_idx;
         $date_str = date('yy-n-d');
-        $exist = DB::fetch($sql,[$user_idx,$date_str]);
+        $exist = DB::fetch($sql, [$user_idx, $date_str]);
         $exist = $exist ? 1 : 0;
 
-        $this->render("evaluate",["exist"=>$exist]);
+        $this->render("evaluate", ["exist" => $exist]);
     }
 
     public function white_noise()
@@ -82,6 +82,6 @@ class MainController extends MasterController
 
     public function statistics()
     {
-        
+        $this->render("statistics");
     }
 }
