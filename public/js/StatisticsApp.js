@@ -36,21 +36,29 @@ class StatisticsApp {
             let dayCalcNum = Math.abs(i-6);
             let day = new Date( today - 24 * 60 * 60 * 1000 * dayCalcNum );
             let date = day.getDate();
-            log(date);
             let horizonSize = 15;
             let fontSize = 15;
             let horizonMargin = ( this.width - ( horizonSize * 7 ) ) / 8;
+            let bottomLinePositionCtrl = 35;
+            let textX = ( horizonMargin * (i + 1) ) + ( horizonSize * i );
+            let textY = this.height - fontSize;
+
+            if(i === 6){ // 오늘날짜 하이라이팅
+                
+                this.ctx.fillStyle = "#5685ff";
+                this.ctx.beginPath();
+                this.ctx.moveTo(textX + fontSize / 2,textY);
+                this.ctx.arc(textX + fontSize / 2, textY, 15, -Math.PI / 2, 3 / 2 * Math.PI);
+                this.ctx.fill();
+
+            }
             
             this.ctx.textBaseline = "middle";
             this.ctx.textAlign = "left";
-            this.ctx.fillStyle = "#333";
+            this.ctx.fillStyle = i === 6 ? "#fff" : '#333';
             this.ctx.font = `bold ${fontSize}px Arial`;
+            this.ctx.fillText(date,textX,textY);
 
-            let left = ( horizonMargin * (i + 1) ) + ( horizonSize * i );
-            let yPost = this.height - fontSize;
-            this.ctx.fillText(date,left,yPost);
-
-            let bottomLinePositionCtrl = 35;
             this.ctx.beginPath();
             this.ctx.strokeStyle = "#dfdfdf";
             this.ctx.lineWidth = 1;
@@ -58,6 +66,8 @@ class StatisticsApp {
             this.ctx.lineTo( this.width ,this.height - bottomLinePositionCtrl );
             this.ctx.stroke();
             this.ctx.closePath();
+
+            
         }
     }
 
