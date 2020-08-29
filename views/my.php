@@ -23,8 +23,9 @@
                             <?= htmlentities(Library::getUser()->user_name) ?>
                         </span>
                         <span class="profile_id">
-                        <?= htmlentities(Library::getUser()->user_id) ?>
+                            <?= htmlentities(Library::getUser()->user_id) ?>
                         </span>
+                        <div class="profile_btn">캔들전용 고유번호 보기</div>
                     </div>
                 </div>
 
