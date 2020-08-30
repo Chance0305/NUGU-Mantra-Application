@@ -121,7 +121,13 @@ class StatisticsApp {
     }
 
     getScore() {
+        return new Promise((res,rej)=>{
+            
+            let formData = new FormData();
+            let xhr = new XMLHttpRequest();
+            // xhr.open("POST","");
 
+        });
     }
 
 }
