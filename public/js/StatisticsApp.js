@@ -115,7 +115,6 @@ class StatisticsApp {
             this.ctx.closePath();
 
         }
-
     }
 
     addEvent() {
