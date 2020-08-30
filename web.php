@@ -20,6 +20,7 @@ if (isset($_SESSION['user'])) {
 
     Route::post("/request-record", "RecordController@getRecord");
     Route::post("/record/insert", "RecordController@insertRecord");
+    Route::post("/record/load", "RecordController@loadRecord");
 } else {
     // Route::get("/", "MainController@login");
     Route::get("/", "MainController@init");

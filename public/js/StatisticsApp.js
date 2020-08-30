@@ -16,7 +16,7 @@ class StatisticsApp {
         this.render();
     }
 
-    render() {
+    async render() {
 
         document.querySelectorAll("#bottom > .bottom_icon")[1].classList.add("bottom_active");
 
@@ -44,9 +44,9 @@ class StatisticsApp {
             let horizonMargin = (this.width - (horizonSize * 7)) / 8;
             let textX = (horizonMargin * (i + 1)) + (horizonSize * i);
             let textY = this.height - fontSize;
-            let score = arr[i];
+            // let score = arr[i];
+            let score = await this.getScore(day.toDBString());
             let circleY = graphHeight - (graphHeight * score * 0.01) + ( circleRadius );
-            dotList.push([textX, circleY , score]);
 
             if (i === 6) { // 오늘날짜 하이라이팅
                 this.ctx.fillStyle = "#5685ff";
@@ -62,6 +62,8 @@ class StatisticsApp {
             this.ctx.textAlign = "left";
             this.ctx.font = `bold ${fontSize}px Arial`;
             this.ctx.fillText(date, textX, textY);
+
+            if(!score) continue;
 
             this.ctx.beginPath();
             this.ctx.strokeStyle = "#dfdfdf";
@@ -87,6 +89,7 @@ class StatisticsApp {
                 this.ctx.closePath();
             }
 
+            dotList.push([textX, circleY , score]);
         }
 
         this.ctx.strokeStyle = "#5685ff";
@@ -104,8 +107,6 @@ class StatisticsApp {
 
         for (let i = 0; i < dotList.length; i++) {
             let nowDot = dotList[i];
-            let nextDot = dotList[i + 1] || null;
-            if (nextDot === null) continue;
             this.ctx.fillStyle = '#fff';
             this.ctx.beginPath();
             this.ctx.moveTo(nowDot[0], nowDot[0]);
@@ -114,19 +115,28 @@ class StatisticsApp {
             this.ctx.closePath();
 
         }
+
     }
 
     addEvent() {
 
     }
 
-    getScore() {
+    getScore(date) {
         return new Promise((res,rej)=>{
             
             let formData = new FormData();
+            formData.append("date",date);
             let xhr = new XMLHttpRequest();
-            // xhr.open("POST","");
+            xhr.open("POST","/record/load");
+            xhr.addEventListener("load",(e)=>{
 
+                let record = JSON.parse(xhr.responseText).record;
+                record = record ? record.score*1 : record;
+                res(record);
+
+            });
+            xhr.send(formData);
         });
     }
 
