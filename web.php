@@ -31,4 +31,5 @@ if (isset($_SESSION['user'])) {
     Route::post("/user/login", "UserController@login_process");
 }
 
+
 Route::get("/error", "MainController@error");
