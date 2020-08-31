@@ -59,8 +59,7 @@ class UserController
         $sql = "UPDATE `mantra_users` SET `user_img`= ? WHERE `user_idx` = ?";
         $result = DB::execute($sql,[$file_path,$user_idx]);
         $_SESSION['user']->user_img = $file_path;
-        $test = $file['tmp_name'];
-        Library::sendJson(["result"=>$result,"test"=>$test]);
+        Library::sendJson(["result"=>$result]);
 
     }
 }
