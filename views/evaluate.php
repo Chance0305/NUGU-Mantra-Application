@@ -10,7 +10,7 @@
         <div class="evaluate_top_icons">
             <a href="/menu"><i class="fas fa-chevron-left"></i></a>
             <span></span>
-            <i class="far fa-question-circle"></i>
+            <i class="far fa-question-circle" id="evaluate_question_circle"></i>
         </div>
     </div>
     <div class="evaluate_bottom">
