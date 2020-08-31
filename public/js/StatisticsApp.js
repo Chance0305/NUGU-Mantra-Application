@@ -153,7 +153,8 @@ class StatisticsApp {
     }
 
     questionBtnClickEventHandler = e => {
-
+        let txt = "오늘날짜 기준 최근 7일간의 기록들을 모아봤어요! 그래프가 들쑥날쑥하면 기복이 심하신거겠죠?";
+        window.modal.alert(txt);
     }
 
     backBtnClickEventHandler = e => {
