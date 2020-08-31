@@ -148,7 +148,16 @@ class StatisticsApp {
 
     addEvent() {
         window.addEventListener("resize", this.windowResizeEventHandler);
-        document.querySelector("#stat_back");
+        document.querySelector("#stat_back").addEventListener("click", this.backBtnClickEventHandler);
+        document.querySelector("#stat_question").addEventListener("click", this.questionBtnClickEventHandler);
+    }
+
+    questionBtnClickEventHandler = e => {
+
+    }
+
+    backBtnClickEventHandler = e => {
+        location.href = "/calendar";
     }
 
     windowResizeEventHandler = e => {
