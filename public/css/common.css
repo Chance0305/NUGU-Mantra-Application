@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@import url('../fontawesome/css/all.min.css');
+@font-face {
+    src: url('../font/NotoSansCJKkr-Regular.otf');
+    font-family: "noto";
+    font-weight: normal;
+}
+
+@font-face {
+    src: url('../font/NotoSansCJKkr-Medium.otf');
+    font-family: "noto";
+    font-weight: bold;
+}
+
+:root {
+    --main-color: #5685ff;
+    --sub-color: #87abff;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'noto';
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.parent-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.flex-center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between-row {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.flex-center-coulmn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Toast Start */
+
+#toast-list {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+#toast-list .toast {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 10px #0001;
+    font-size: 14px;
+    color: #f3f3f3;
+    opacity: 0;
+    margin-top: -120px;
+}
+
+/* Toast End */
+
+/* splash start */
+
+#splash_screen {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10000;
+    background-color: #fff;
+}
+
+#splash_logo {
+    width: 50%;
+    object-fit: cover;
+    transform: scale(1.0) rotate(0deg);
+}
+
+.splash_text {
+    font-size: 1.7em;
+    font-weight: 900;
+    color: var(--sub-color);
+}
+
+.splash_text>span {
+    color: var(--main-color);
+}
+
+/* splash end */
+
+/*  alert common start */
+
+.alert_screen {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0008;
+    z-index: 100000;
+    display: none;
+}
+
+.alert_container {
+    width: 70%;
+    min-width: 250px;
+    max-width: 300px;
+    height: auto;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.alert_text {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #5f5d5d;
+    margin-bottom: 30px;
+}
+
+.alert_options {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert_option {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.alert_refuse {
+    background-color: #f5f5f5;
+    color: #989898;
+}
+
+.alert_ok {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.alert_ok_only {
+    width: 100%;
+}
+
+/* alert end */
+
+/* layout top, bottom start */
+
+.layout_container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 50px 1fr 90px;
+}
+
+/* top section start */
+
+#top {
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#logo_white {
+    width: 35%;
+    object-fit: cover;
+}
+
+#option_btn {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+/* top section end */
+
+/* bottom section */
+
+#bottom {
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px -2px 8px 2px #0001;
+}
+
+.bottom_icon {
+    width: calc(100% / 3);
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #9d9d9d;
+}
+
+.bottom_icon.bottom_active {
+    color: var(--main-color);
+}
+
+.bottom_icon>i {
+    font-size: 2em;
+    margin-bottom: 3px;
+}
+
+.bottom_icon>span {
+    font-size: 0.8em;
+}
+
+/* bottom section end */
+
+/* main section start */
+
+section#main {
+    background-color: #f7f7f7;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+section#main::-webkit-scrollbar {
+    display: none;
+}
+
+/* layout top, bottom end */
+
+/* back button start */
+
+.back_btn {
+    position: fixed;
+    color: #fffb;
+    width: 30px;
+    height: 30px;
+    background-color: #0005;
+    border-radius: 30px;
+    left: 10px;
+    bottom: 13%;
+}
+
+/* back button end */
