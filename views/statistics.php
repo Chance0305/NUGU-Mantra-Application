@@ -13,7 +13,5 @@
         </div>
     </div>
     <canvas id="stat_canvas" height="300"></canvas>
-    <div class="stat_bottom">
-
-    </div>
+    <div class="stat_bottom"></div>
 </div>

@@ -12,7 +12,7 @@ use Gondr\App\Library;
 <div class="main_status">
     <div class="main_status_top">
         <img src="<?= Library::getUser()->user_img ?>" alt="user_img">
-        <i class="fas fa-question-circle"></i>
+        <i class="fas fa-question-circle" id="main_question_icon"></i>
     </div>
 
     <div class="main_status_graph">
