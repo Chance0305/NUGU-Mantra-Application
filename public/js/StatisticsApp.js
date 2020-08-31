@@ -147,11 +147,14 @@ class StatisticsApp {
     }
 
     addEvent() {
-        window.addEventListener("resize",(e)=>{
-            this.width = $(window).width();
-            this.canvas.width = this.width;
-            this.render();
-        });
+        window.addEventListener("resize", this.windowResizeEventHandler);
+        document.querySelector("#stat_back");
+    }
+
+    windowResizeEventHandler = e => {
+        this.width = $(window).width();
+        this.canvas.width = this.width;
+        this.render();
     }
 
     getScore(date) {

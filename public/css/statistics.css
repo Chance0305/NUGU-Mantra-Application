@@ -3,5 +3,33 @@
     height: 100%;
     position: relative;
     display: grid;
-    grid-template-rows: 1fr 400px 1fr;
+    grid-template-rows: 1fr 300px 1fr;
 }
+
+.stat_top {
+    width: 100%;
+    position: relative;
+}
+
+.stat_top_container {
+    width: 100%;
+    height: 40%;
+    background-color: var(--main-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.stat_top_container > i {
+    font-size: 1.3em;
+}
+
+.stat_top_container > span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
