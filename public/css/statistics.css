@@ -32,4 +32,10 @@
     font-weight: bold;
 }
 
-
+.stat_top_text {
+    font-weight: lighter;
+    color: #bababa;
+    text-align: center;
+    font-size: 0.87em;
+    margin-top: 5px;
+}

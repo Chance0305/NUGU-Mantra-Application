@@ -8,6 +8,9 @@
             <span>통계</span>
             <i class="far fa-question-circle" id="stat_question"></i>
         </div>
+        <div class="stat_top_text">
+            최근 7일간의 정보만 표시됩니다.
+        </div>
     </div>
     <canvas id="stat_canvas" height="300"></canvas>
     <div class="stat_bottom">
