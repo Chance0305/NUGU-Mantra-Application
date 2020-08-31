@@ -12,5 +12,6 @@ use Gondr\App\Library; ?>
 
         <script>
             window.user_name = `<?= htmlentities(Library::getUser()->user_name) ?>`;
-            window.USER_IDX = <?= htmlentities(Library::getUser()->user_idx) ?>
+            window.USER_IDX = <?= htmlentities(Library::getUser()->user_idx) ?>;
+            window.USER_ID = `<?= htmlentities(Library::getUser()->user_id) ?>`;
         </script>

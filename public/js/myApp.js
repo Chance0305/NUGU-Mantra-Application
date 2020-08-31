@@ -16,6 +16,18 @@ class MyApp {
     addEvent(){
         document.querySelector(".profile_bottom_btn").addEventListener("click", this.logoutBtnClickEventHandler);
         document.querySelector(".profile_edit_btn").addEventListener('click', this.profileEditBtnClickEventHandler);
+        document.querySelector(".profile_btn").addEventListener('click', this.profileUniqueBtnClickEventHandler);
+    }
+
+    profileUniqueBtnClickEventHandler = e => {
+        modal.confirm("고유번호는 타인에게 노출되어서는 안됩니다! 확인하시겠습니까?").then((e)=>{
+            if(e){
+
+                const UID = getUniqueId(window.USER_ID,window.USER_IDX);
+                modal.alert(UID);
+
+            }
+        });
     }
 
     profileEditBtnClickEventHandler = e=> {
@@ -64,3 +76,11 @@ class MyApp {
 window.addEventListener('load',()=>{
     let myApp = new MyApp();
 });
+
+function getUniqueId(id,user_idx){
+    let firstLetter = id.substring(0,1).toUpperCase();
+    let secLetter = id.substring(1,2).toUpperCase();
+    firstLetter = firstLetter.charCodeAt();
+    secLetter = secLetter.charCodeAt();
+    return "M" + firstLetter + secLetter + user_idx;
+}

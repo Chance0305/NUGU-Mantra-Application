@@ -38,8 +38,8 @@
             </div>
         </div>
 
-        <div class="day_info_btn">
-            월간 통계 보러 가기
-        </div>
+        <a class="day_info_btn" href="/statistics">
+            최근 통계 보러 가기
+        </a>
     </div>
 </div>

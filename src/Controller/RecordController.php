@@ -32,4 +32,13 @@ class RecordController
         $result = DB::execute($sql,$datas);
         Library::sendJson($result);
     }
+
+    public function loadRecord()
+    {
+        $date = $_POST['date'];
+        $user_idx = Library::getUser()->user_idx;
+        $sql = 'SELECT * FROM `mantra_record` WHERE `date` = ? AND `user_idx` = ?';
+        $record = DB::fetch($sql,[$date,$user_idx]);
+        Library::sendJson(["record"=>$record]);
+    }
 }

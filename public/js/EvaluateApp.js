@@ -13,6 +13,12 @@ class EvaluateApp {
     addEvent(){
         this.score_input.addEventListener("input", this.scoreRangeInputHandler);
         document.querySelector('.evaluate_btn').addEventListener("click", this.evaluateBtnClickHandler);
+        document.querySelector("#evaluate_question_circle").addEventListener("click", this.evaluateQuestionBtnClickHandler);
+    }
+
+    evaluateQuestionBtnClickHandler = e=> {
+        let txt = `오늘 하루에 대해 점수를 남기고, 짧게 한줄평을 남기는 곳이예요! 기록하신 내용은 하단의 기록 탭에서 확인 가능해요!`;
+        modal.alert(txt);
     }
 
     evaluateBtnClickHandler = e=> {

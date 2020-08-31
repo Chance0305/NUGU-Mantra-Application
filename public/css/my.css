@@ -107,3 +107,10 @@
     font-weight: bold;
     margin-bottom: 25px;
 }
+
+.profile_btn {
+    font-size: 0.8em;
+    color: #7a7a7a;
+    text-decoration: underline;
+}
+

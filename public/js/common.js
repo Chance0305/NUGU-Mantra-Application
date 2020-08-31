@@ -87,7 +87,13 @@ window.addEventListener("load", () => {
         }); 
     });
     
+    $("#option_btn").on('click',()=>{
+        window.modal.alert("기능 개발중입니다.");
+    });
 
+    $("#logo_white").on('click',()=>{
+        location.href = '/';
+    });
 });
 
 String.prototype.toXSSFilteredText = function () {

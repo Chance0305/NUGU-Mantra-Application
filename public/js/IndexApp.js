@@ -22,6 +22,12 @@ class IndexApp {
 
     addEvent() {
         $(window).on("resize", this.resizeGraph);
+        $("#main_question_icon").on('click', this.questionBtnClickEventHandler);
+    }
+
+    questionBtnClickEventHandler = e => {
+        let txt = "사용자님의 제일 최근 기록하신 점수예요! 하단의 만트라 서비스 시작하기 버튼을 눌러 만트라를 즐겨주세요!";
+        window.modal.alert(txt);
     }
 
     editText = e => {
