@@ -25,7 +25,7 @@ class RecordController
         $comment = $_POST['comment'];
         $score = $_POST['score'];
         $user_idx = Library::getUser()->user_idx;
-        $date = date('yy-n-d');
+        $date = date('yy-n-j');
 
         $sql = "INSERT INTO `mantra_record`(`record_idx`, `user_idx`, `date`, `score`, `comment`) VALUES (null,?,?,?,?)";
         $datas = [$user_idx,$date,$score,$comment];
