@@ -1,12 +1,3 @@
-const txtArr = [
-    "뽀로로를 불러봐요 뽀롱뽀롱 뽀롱뽀롱 뽀롱뽀롱 뽀롱뽀롱 뽀롱뽀롱 뽀로로!",
-    "피카츄 라이츄 파이리 꼬북이 버터플 야도란 피죤투 또가스 서로 생긴 모습은 달라도 우리는 모두 친구",
-    "이세상에 제일가는 말썽쟁이 짱구 천방지축 얼렁뚱땅 앞뒤 짱구 짱구와 함께라면 모든지 할 수 있어.",
-    "하고싶은 일모두 할수있음 좋겠네 하늘만큼 땅만큼 너무나 많은꿈들 모두모두모두다 이루게해준다네 신기한 주머니로 이루게해준다네",
-    "찾아라 비밀의 열쇠 미로같이 얽힌 모험들 현실과 또 다른 세상 환상의 디지털 세상 펼쳐라 마음속 날개 이대로 멈출순 없어 빛나는 희망을 싣고 어둠 뜷고나가자",
-    "갈비찜을 밥위에 얹어주세요. 갈비찜을 밥이랑 비벼주세요. 내가 제일 좋아하는 갈비찜 덮밥. 아하아아아~ 냠냠!"
-];
-
 class CalendarApp {
     constructor() {
         this.canvas = document.querySelector("#date_canvas");
@@ -87,10 +78,9 @@ class CalendarApp {
 
                     dayObject.dom.innerHTML = `<span>${dNum}</span>`;
                     dNum++;
+                    this.dateArr.push(dayObject);
 
                 }
-
-                this.dateArr.push(dayObject);
                 tr.appendChild(dayObject.dom);
 
             }
