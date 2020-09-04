@@ -63,7 +63,7 @@ class MainController extends MasterController
 
         $sql = "SELECT * FROM `mantra_record` WHERE `user_idx` = ? AND `date` = ?";
         $user_idx = Library::getUser()->user_idx;
-        $date_str = date('yy-n-d');
+        $date_str = date('yy-n-j');
         $exist = DB::fetch($sql, [$user_idx, $date_str]);
         $exist = $exist ? 1 : 0;
 

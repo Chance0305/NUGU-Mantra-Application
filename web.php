@@ -32,3 +32,4 @@ if (isset($_SESSION['user'])) {
 }
 
 Route::get("/error", "MainController@error");
+Route::get("/data/test","MusicController@test");
