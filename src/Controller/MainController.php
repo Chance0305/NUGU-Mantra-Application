@@ -63,7 +63,7 @@ class MainController extends MasterController
 
         $sql = "SELECT * FROM `mantra_record` WHERE `user_idx` = ? AND `date` = ?";
         $user_idx = Library::getUser()->user_idx;
-        $date_str = date('yy-n-j');
+        $date_str = date('yy-n-j'); // n : 0 안붙은 월 , j : 0 안붙은 일
         $exist = DB::fetch($sql, [$user_idx, $date_str]);
         $exist = $exist ? 1 : 0;
 
