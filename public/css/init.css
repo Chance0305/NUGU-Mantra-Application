@@ -1,0 +1,63 @@
+html,body {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( to top, var(--main-color), #9dbaff);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.init_logo {
+    width: 20%;
+}
+
+.init_img_box > .init_logo:last-child {
+    width: 50%;
+    margin-top: 2em;
+}
+
+.init_img_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.init_options {
+    width: 100%;
+    height: 14%;
+}
+
+.init_options>a {
+    all: unset;
+}
+
+.init_options .init_option {
+    width: 100%;
+    height: 36%;
+    margin: 20px 0;
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+
+.register_option {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+.login_option {
+    border: 2px solid #fff;
+    color: #fff;
+}
