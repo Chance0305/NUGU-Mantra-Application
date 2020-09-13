@@ -31,5 +31,10 @@ if (isset($_SESSION['user'])) {
     Route::post("/user/login", "UserController@login_process");
 }
 
+<<<<<<< HEAD
+Route::get("/error", "MainController@error");
+Route::get("/data/test","MusicController@test");
+=======
 
 Route::get("/error", "MainController@error");
+>>>>>>> b73be9bd2c89287e52578f8b2cde18bbd7982c2e
