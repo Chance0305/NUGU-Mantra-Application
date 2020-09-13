@@ -1,10 +1,14 @@
 <?php
 
 date_default_timezone_set("Asia/Seoul");
+<<<<<<< HEAD
 
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+=======
+error_reporting(E_ALL);
+>>>>>>> b73be9bd2c89287e52578f8b2cde18bbd7982c2e
 session_start();
 
 define('__DS', DIRECTORY_SEPARATOR);
