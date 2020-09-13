@@ -79,8 +79,6 @@ window.addEventListener('load',()=>{
 
 function getUniqueId(id,user_idx){
     let firstLetter = id.substring(0,1).toUpperCase();
-    let secLetter = id.substring(1,2).toUpperCase();
     firstLetter = firstLetter.charCodeAt();
-    secLetter = secLetter.charCodeAt();
-    return "M" + firstLetter + secLetter + user_idx;
+    return "M" + firstLetter + user_idx;
 }
