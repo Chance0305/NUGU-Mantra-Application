@@ -77,7 +77,7 @@ window.addEventListener('load',()=>{
     let myApp = new MyApp();
 });
 
-function getUniqueId(id,user_idx){
+function getUniqueId(id,user_idx){ // 누구 캔들 전용 고유번호 보기
     let firstLetter = id.substring(0,1).toUpperCase();
     firstLetter = firstLetter.charCodeAt();
     return "M" + firstLetter + user_idx;
